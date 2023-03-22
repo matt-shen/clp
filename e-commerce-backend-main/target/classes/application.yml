@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+  datasource:
+    initialization-mode: always
+    url: jdbc:postgresql://training-kyle-p.cvtq9j4axrge.us-east-1.rds.amazonaws.com:5432/Matthew
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: dDrl09TKG0NB
